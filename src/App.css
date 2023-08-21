@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+body {
+  background-color: orange;
+  transition: background-color .5s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#quote-box {
+  background-color: white;
+  width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px 1px gray;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  
+}
+
+#text {
+  display: flex;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  transition: opacity .5s;
+  padding: 10px;
+}
+
+.frase {
+  padding: 0 15px 0 15px;
+  margin-bottom: 0;
+}
+
+.fa-quote-left {
+  font-size: 35px;
+}
+
+#author {
+  text-align: end;
+  transition: opacity 1s ease;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#new-quote {
+  border: none;
   color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+#tweet-quote i{
+  font-size: 40px;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.derechos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.logo {
+  width: 130px;
+  padding-left: 10px;
+}
+
+@media (max-width:615px) { 
+  #quote-box {
+    padding: 10px 20px 10px 20px;
+      width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+  #text {
+    font-size: 20px;
+  }
+  #author {
+  font-size: 15px;
+  }
+  .fa-quote-left {
+  font-size: 25px;
   }
 }
