@@ -1,5 +1,4 @@
-import React from 'https://esm.sh/react@18.2.0'
-import ReactDOM from 'https://esm.sh/react-dom@18.2.0'
+import React from 'react';
 import './App.css';
 
 const frasesData = [
@@ -101,12 +100,10 @@ setTimeout(() => {
 
  
   return (
-    <div class="main">
+    <div className="main">
      <Contenedor frases={frases} nuevaFrase={nuevaFrase} color={color} opacity={opacity} />
     </div>
   )
 }
-
-ReactDOM.render(<App/>, document.querySelector("#app"))
 
 export default App;
